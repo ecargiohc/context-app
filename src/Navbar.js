@@ -26,9 +26,14 @@ class Navbar extends Component {
                         </Typography>
                         <Switch />
                         <div className={classes.grow} />
-                        <div className={classes.search} />
+                        <div className={classes.search} >
                         <div className={classes.SearchIcon}>
                             <SearchIcon />
+                            </div>
+                            <InputBase placeholder="Search..." classes={{
+                                root: classes.inputRoot, 
+                                input: classes.inputInput
+                            }}/>
                         </div>
                     </Toolbar>
                 </AppBar>
