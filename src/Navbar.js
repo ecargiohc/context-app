@@ -15,7 +15,7 @@ class Navbar extends Component {
         const {classes} = this.props;
         return(
             <div className={classes.root}>
-                <AppBar position="static" color="primary">
+                <AppBar  color="primary">
                     <Toolbar>
                         <IconButton className={classes.menuButton} color="inherit">
                             <span>🇫🇷</span>
