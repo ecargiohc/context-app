@@ -6,21 +6,22 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Input from '@material-ui/core/Input';
-import InputLable from '@material-ui/core/InputLable';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlinedIcon';
+import InputLabel from '@material-ui/core/InputLabel';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-import withStyles from '@material-ui/core/withStyles';
+import withStyles from '@material-ui/core/styles/withStyles';
 import styles from "./styles/FormStyles";
 
 class Form extends Component {
     render() {
+        const {classes} = this.props;
         return (
-            <div>
-
-            </div>
+            <main className={classes.main}>
+                <h1>the FORM</h1>
+            </main>
         )
     }
 };
