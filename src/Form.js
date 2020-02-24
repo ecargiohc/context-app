@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import withStyles from '@material-ui/core/withStyles';
+import styles from "./styles/FormStyles";
 
 class Form extends Component {
     render() {
@@ -23,4 +24,4 @@ class Form extends Component {
         )
     }
 };
-export default Form;
+export default withStyles(styles)(Form);
