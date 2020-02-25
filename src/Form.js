@@ -21,7 +21,9 @@ class Form extends Component {
         return (
             <main className={classes.main}>
                 <Paper className={classes.paper}>
-                    <h1>FORM</h1>
+                    <Avatar className={classes.avatar}>
+                        <LockOutlinedIcon />
+                    </Avatar>
                 </Paper>
             </main>
         )

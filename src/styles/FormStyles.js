@@ -15,6 +15,10 @@ const styles =  theme => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center"
+    },
+    avatar: {
+        margin: theme.spacing.unit,
+        backgroundColor: theme.palette.secondary.main
     }
 });
 export default styles;
