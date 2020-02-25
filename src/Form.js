@@ -20,7 +20,9 @@ class Form extends Component {
         const {classes} = this.props;
         return (
             <main className={classes.main}>
-                <h1>the FORM</h1>
+                <Paper>
+                    <h1>FORM</h1>
+                </Paper>
             </main>
         )
     }
