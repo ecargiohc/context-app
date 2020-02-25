@@ -9,6 +9,12 @@ const styles =  theme => ({
             marginLeft: "auto",
             marginRight: "auto"
         }
+    },
+    paper: {
+        marginTop: theme.spacing.unit * 8, 
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
     }
 });
 export default styles;
