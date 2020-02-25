@@ -24,6 +24,7 @@ class Form extends Component {
                     <Avatar className={classes.avatar}>
                         <LockOutlinedIcon />
                     </Avatar>
+                    <Typography variant="h5">Sign In!</Typography>
                 </Paper>
             </main>
         )
