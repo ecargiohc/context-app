@@ -30,7 +30,12 @@ class Form extends Component {
                         <MenuItem>French</MenuItem>
                         <MenuItem>Spanish</MenuItem>
                     </Select>
-
+                    <form className={classes.form}>
+                        <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="email">Email</InputLabel>
+                            <Input id="email" name="email" autoFocus />
+                        </FormControl>
+                    </form> 
                 </Paper>
             </main>
         )
