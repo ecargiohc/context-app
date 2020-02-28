@@ -35,6 +35,10 @@ class Form extends Component {
                             <InputLabel htmlFor="email">Email</InputLabel>
                             <Input id="email" name="email" autoFocus />
                         </FormControl>
+                        <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="password">Password</InputLabel>
+                            <Input id="password" name="password" autoFocus />
+                        </FormControl> 
                     </form> 
                 </Paper>
             </main>
