@@ -39,7 +39,9 @@ class Form extends Component {
                             <InputLabel htmlFor="password">Password</InputLabel>
                             <Input id="password" name="password" autoFocus />
                         </FormControl> 
-                        <FormControlLabel control={<Checkbox color="primary"/>} />
+                        <FormControlLabel control={<Checkbox color="primary"/>} 
+                        label="Remember Me"/>
+                        <Button variant="container" type="submit" fullWidth color="primary" className={classes.submit}>Submit</Button>
                     </form> 
                 </Paper>
             </main>
