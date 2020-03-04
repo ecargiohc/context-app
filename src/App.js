@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from './Navbar';
 import Form from './Form';
 import PageContent from './PageContent';
-import { ThemeProvider } from '@material-ui/core';
+// import { ThemeProvider } from '@material-ui/core';
+import {ThemeProvider} from './contexts/ThemeContext';
 
 function App() {
   return (
