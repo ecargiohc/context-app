@@ -8,9 +8,11 @@ import SearchIcon from '@material-ui/icons/Search';
 import Switch from '@material-ui/core/Switch';
 import {withStyles} from '@material-ui/core/styles';
 import styles from './styles/NavBarStyles';
+import {ThemeContext} from './contexts/ThemeContext';
 
 
 class Navbar extends Component {
+    static contextType = ThemeContext;
     render() {
         const {classes} = this.props;
         return(
