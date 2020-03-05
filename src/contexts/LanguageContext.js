@@ -9,7 +9,7 @@ export  class LanguageProvider extends Component {
     };
     render() {
         return(
-            <LanguageProvider value={this.state.language}>
+            <LanguageProvider value={{...this.state}}>
                 {this.props.children}
             </LanguageProvider>
         )
