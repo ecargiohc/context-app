@@ -49,7 +49,7 @@ class Form extends Component {
                         <LockOutlinedIcon />
                     </Avatar>
                     <Typography variant="h5">{signIn}</Typography>
-                    <Select value="english">
+                    <Select value={language}>
                         <MenuItem value="english">English</MenuItem>
                         <MenuItem value="french">French</MenuItem>
                         <MenuItem value="spanish">Spanish</MenuItem>
