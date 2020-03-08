@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import CssBaseLine from '@material-ui/core/CssBaseLine';
+// import CssBaseLine from '@material-ui/core/CssBaseLine';
 import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -48,7 +48,7 @@ class Form extends Component {
                     <Avatar className={classes.avatar}>
                         <LockOutlinedIcon />
                     </Avatar>
-                    <Typography variant="h5">Sign In!</Typography>
+                    <Typography variant="h5">{signIn}</Typography>
                     <Select value="english">
                         <MenuItem value="english">English</MenuItem>
                         <MenuItem value="french">French</MenuItem>
@@ -60,12 +60,17 @@ class Form extends Component {
                             <Input id="email" name="email" autoFocus />
                         </FormControl>
                         <FormControl margin="normal" required fullWidth>
-                            <InputLabel htmlFor="password">Password</InputLabel>
+                            <InputLabel htmlFor="password">{password}</InputLabel>
                             <Input id="password" name="password" autoFocus />
                         </FormControl> 
-                        <FormControlLabel control={<Checkbox color="primary"/>} 
-                        label="Remember Me"/>
-                        <Button variant="container" type="submit" fullWidth color="primary" className={classes.submit}>Submit</Button>
+                        <FormControlLabel 
+                        control={<Checkbox color="primary"/>} 
+                        label={remember}/>
+                        <Button 
+                        variant="container" 
+                        type="submit" 
+                        fullWidth color="primary" 
+                        className={classes.submit}>{signIn}</Button>
                     </form> 
                 </Paper>
             </main>
