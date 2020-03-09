@@ -9,7 +9,7 @@ export  class LanguageProvider extends Component {
         this.changeLanguage = this.changeLanguage.bind(this);
     };
     changeLanguage(e) {
-        this.setState(e.target.value);
+        this.setState({language: e.target.value});
     };
     render() {
         return(
