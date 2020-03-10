@@ -15,9 +15,10 @@ class Navbar extends Component {
     render() {
         const {isDarkMode, toggleTheme} = this.context;
         const {classes} = this.props;
+        const {language} = this.props.languageContext;
         return(
-            <LanguageContext.Consumer>
-                {context => (
+            // <LanguageContext.Consumer>
+                // {context => (
                     <div className={classes.root}>
                     <AppBar position="static" color={isDarkMode ? "default" : "primary"}>
                         <Toolbar>
@@ -26,7 +27,8 @@ class Navbar extends Component {
                             </IconButton>
                             <Typography className={classes.title}
                                 variant="h6" color="inherit">
-                                App Title {context.language}
+                                App Title 
+                                {/* {context.language} */}
                             </Typography>
                             <Switch onChange={toggleTheme}/>
                             <div className={classes.grow} />
@@ -42,8 +44,8 @@ class Navbar extends Component {
                         </Toolbar>
                     </AppBar>
                 </div>
-                )}
-            </LanguageContext.Consumer>
+                // )}
+            // {/* </LanguageContext.Consumer> */}
         )
     }
 }; 
