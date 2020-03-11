@@ -38,9 +38,9 @@ const words = {
 };
 
 function Form(props) {
-    useContext(LanguageContext);
-    const {language, changeLanguage} = this.context;
-    const {classes} = this.props;
+    const {language, changeLanguage} =  useContext(LanguageContext);
+    // const {language, changeLanguage} = this.context;
+    const {classes} = props;
     const {signIn, email, password, remember} = words[language];
     return(
         <main className={classes.main}>
