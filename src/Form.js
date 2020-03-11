@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 // import CssBaseLine from '@material-ui/core/CssBaseLine';
@@ -38,6 +38,7 @@ const words = {
 };
 
 function Form(props) {
+    useContext(LanguageContext);
     const {language, changeLanguage} = this.context;
     const {classes} = this.props;
     const {signIn, email, password, remember} = words[language];
