@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 // import CssBaseLine from '@material-ui/core/CssBaseLine';
@@ -36,14 +36,13 @@ const words = {
         remember: "Recuerda"
     }
 };
-class Form extends Component {
-    static contextType = LanguageContext;
-    render() {
-        const {language, changeLanguage} = this.context;
-        const {classes} = this.props;
-        const {signIn, email, password, remember} = words[language];
-        return (
-            <main className={classes.main}>
+
+function Form(props) {
+    const {language, changeLanguage} = this.context;
+    const {classes} = this.props;
+    const {signIn, email, password, remember} = words[language];
+    return(
+        <main className={classes.main}>
                 <Paper className={classes.paper}>
                     <Avatar className={classes.avatar}>
                         <LockOutlinedIcon />
@@ -74,7 +73,12 @@ class Form extends Component {
                     </form> 
                 </Paper>
             </main>
-        )
-    }
+    )
 };
+// class Form extends Component {
+//     static contextType = LanguageContext;
+//     render() {
+//        
+//     }
+// };
 export default withStyles(styles)(Form);
