@@ -13,12 +13,14 @@ import styles from './styles/NavBarStyles';
 // import {ThemeContext} from './contexts/ThemeContext';
 // import {LanguageContext} from './contexts/LanguageContext';
 
+// our CONTEXT here is the 'theme'/styling
 class NavbarClass extends Component {
     render() {
+        // classes are coming from {withStyles}
         const {classes} = this.props;
         return(
             <div className={classes.root}>
-                <h1>NavbarClass here</h1>
+                <Appbar> </Appbar>
             </div>
         )
     }
