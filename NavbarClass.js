@@ -20,4 +20,4 @@ class NavbarClass extends Component {
         )
     }
 }
-export default NavbarClass;
+export default withStyles(styles)(NavbarClass);
